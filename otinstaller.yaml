@@ -21,7 +21,7 @@ outputs:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/getjs@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/getjs@sha256:8c24712645b4d8d3e47546f77acf589a7b2e952e0911285a9b38a0f8aaed7967
   platforms: [linux/amd64, linux/arm64]
   command: ["getJS", "-url", "{url}", "-complete", "-timeout", "20s"]
   output_format: text
